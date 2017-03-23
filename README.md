@@ -2,6 +2,7 @@
 
 Built a Hidden Markov Model part-of-speech tagger for Catalan language (in Python) which assigns part-of-speech tags to the test data.
 The training data provided to the tagger is tokenized and tagged while the test data will be just tokenized, and the tagger will allocate the tags to each word.
+
 The tagger implements Viterbi algorithm and uses add-one smoothing on the transition probabilities and no smoothing on the emission probabilities; for unknown tokens in the test data it will ignore the emission probabilities and use the transition probabilities alone.
 
 The performance of the tagger was calculated on how well it performs on unseen test data compared to the performance of a reference tagger.
